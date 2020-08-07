@@ -40,10 +40,10 @@ namespace Car_Owners
                     //If the value is an integer, make sure it is less than or equal to 4 OR greater than or equal to 1
                     if(choice >= 4 || choice <= 1)
                     {
-                        Console.WriteLine("Enter a number between 1 and 3.");
+                        Console.WriteLine("Enter a number between 1 and 4.");
                     }
 
-                //Exiting the while loop should mean the choice is now an integer between 1 and 3
+                //Exiting the while loop should mean the choice is now an integer between 1 and 4
                 }
 
                 //Switch/select case statement to determine what to do based on user input
@@ -81,7 +81,7 @@ namespace Car_Owners
                         //Add person to peopleList
                         peopleList.Add(newPerson);
 
-                        Console.WriteLine("Person added with the following details:");
+                        Console.WriteLine("\nPerson added with the following details:");
                         //Confirmation of details
                         newPerson.declarePerson();
 
@@ -151,10 +151,10 @@ namespace Car_Owners
                                 else
                                 {
                                     Console.WriteLine("\nPerson not found! Make sure you have added the person to the list and try again.");
+                                    break;
                                 }
                             }
                         }
-
 
                         break;
 
