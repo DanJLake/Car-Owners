@@ -9,7 +9,7 @@ namespace Car_Owners.People
         //Declare object properties
         public string firstName { get; set; }
         public string lastName { get; set; }
-        private int age;
+        public int age { get; set; }
         public bool hasCar { get; set; } = false;
 
         public Car ownedCar;

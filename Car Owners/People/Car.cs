@@ -11,7 +11,7 @@ namespace Car_Owners.People
         public string model { get; set; }
         public int yearRegistered { get; set; }
         public string licenseNumber { get; set; }
-        private Person owner;
+        public Person owner { get; set; }
 
         //Object constructor method, with arguments
         public Car(string carMake, string carModel, int carYearRegistered, string carLicenseNumber, Person carOwner)
