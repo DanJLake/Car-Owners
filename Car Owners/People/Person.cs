@@ -7,10 +7,11 @@ namespace Car_Owners.People
     class Person
     {
         //Declare object properties
-        private string firstName;
-        private string lastName;
+        public string firstName { get; set; }
+        public string lastName { get; set; }
         private int age;
-        private bool hasCar = false;
+        public bool hasCar { get; set; } = false;
+
         public Car ownedCar;
 
         //Object constructor method, with arguments
@@ -28,21 +29,6 @@ namespace Car_Owners.People
             Console.WriteLine("Last Name: " + lastName);
             Console.WriteLine("Person Age: " + age.ToString());
             Console.WriteLine("Car Owner: " + hasCar.ToString());
-        }
-
-        public string getFirstName()
-        {
-            return firstName;
-        }
-
-        public string getLastName()
-        {
-            return lastName;
-        }
-
-        public bool getHasCar()
-        {
-            return hasCar;
         }
 
         public void assignCar()

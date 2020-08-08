@@ -107,7 +107,7 @@ namespace Car_Owners
                             foreach(Person carOwner in peopleList)
                             {
                                 //Convert names to lower case and check if they match any existing person and check the person doesn't have a car
-                                if (carAssignFirstName.ToLower() == carOwner.getFirstName().ToLower() && carAssignLastName.ToLower() == carOwner.getLastName().ToLower() && carOwner.getHasCar() == false)
+                                if (carAssignFirstName.ToLower() == carOwner.firstName.ToLower() && carAssignLastName.ToLower() == carOwner.lastName.ToLower() && carOwner.hasCar == false)
                                 {
                                     //Get car details
                                     string carMake;
@@ -143,7 +143,7 @@ namespace Car_Owners
                                     carOwner.ownedCar = newCar;
                                 }
                                 //If the person is already assigned a car
-                                else if(carOwner.getHasCar() == true)
+                                else if(carOwner.hasCar == true)
                                 {
                                     Console.WriteLine("\nPerson already has a car!");
                                 }
@@ -178,13 +178,13 @@ namespace Car_Owners
                             foreach (Person carOwner in peopleList)
                             {
                                 //Convert names to lower case and check if they match any existing person and check if the person has a car
-                                if (carCheckFirstName.ToLower() == carOwner.getFirstName().ToLower() && carCheckLastName.ToLower() == carOwner.getLastName().ToLower() && carOwner.getHasCar() == true)
+                                if (carCheckFirstName.ToLower() == carOwner.firstName.ToLower() && carCheckLastName.ToLower() == carOwner.lastName.ToLower() && carOwner.hasCar == true)
                                 {
                                     Console.WriteLine("\n" + carCheckFirstName + " " + carCheckLastName + "'s car:");
                                     carOwner.ownedCar.declareCar();
                                 }
                                 //If the person doesn't have a car
-                                else if (carOwner.getHasCar() == false)
+                                else if (carOwner.hasCar == false)
                                 {
                                     Console.WriteLine("\nPerson doesn't have a car!");
                                 }

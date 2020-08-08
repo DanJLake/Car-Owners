@@ -7,10 +7,10 @@ namespace Car_Owners.People
     class Car
     {
         //Declare object properties
-        private string make;
-        private string model;
-        private int yearRegistered;
-        private string licenseNumber;
+        public string make { get; set; }
+        public string model { get; set; }
+        public int yearRegistered { get; set; }
+        public string licenseNumber { get; set; }
         private Person owner;
 
         //Object constructor method, with arguments
